@@ -2,6 +2,7 @@ ea4bc82a6ad023ab7ee23ee620429895
 ::res://::1698974649
 icon.svg::CompressedTexture2D::3876515478013530313::1698958670::1698958675::1::::<><>::
 README.md::TextFile::-1::1698953846::0::1::::<><>::
+<<<<<<< HEAD
 ::res://assets/::1698974649
 ::res://assets/placeholders/::1698974649
 24x24_Player.png::CompressedTexture2D::6220630694183048710::1698959703::1698974362::1::::<><>::
@@ -16,5 +17,18 @@ base_level.tscn::PackedScene::2775283280040071679::1698975513::0::1::::<><>::uid
 main.tscn::PackedScene::2976519969243533387::1698975513::0::1::::<><>::
 ::res://scenes/placeholder_level/::1698975513
 placeholder_level.tscn::PackedScene::7088411729996224855::1698975513::0::1::::<><>::uid://bfsmrly4sh71t::::res://scenes/base_level/base_level.tscn
+=======
+::res://assets/::1698959619
+::res://assets/placeholders/::1698959724
+24x24_Player.png::CompressedTexture2D::6220630694183048710::1698959703::1698964449::1::::<><>::
+::res://resources/::1698959489
+theme.tres::Theme::649850629649754962::1698959489::0::1::::<><>::
+::res://scenes/::1698964205
+::res://scenes/main/::1698959569
+main.tscn::PackedScene::2976519969243533387::1698959569::0::1::::<><>::
+::res://scenes/player/::1698964382
+player.tscn::PackedScene::6849779700536544327::1698964430::0::1::::<><>::res://scenes/player/player.gd<>uid://cuvk44068epsw::::res://assets/placeholders/24x24_Player.png
+player.gd::GDScript::-1::1698964411::0::1::::Player<>CharacterBody2D<>::
+>>>>>>> add player simple movement
 ::res://scripts/::1698959565
 globals.gd::GDScript::-1::1698959565::0::1::::<>Node<>::
