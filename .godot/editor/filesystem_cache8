@@ -1,4 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1698959311
+::res://::1698959587
 icon.svg::CompressedTexture2D::3876515478013530313::1698958670::1698958675::1::::<><>::
 README.md::TextFile::-1::1698953846::0::1::::<><>::
+::res://assets/::1698959619
+::res://assets/placeholders/::1698959722
+24x24_Player.png::CompressedTexture2D::6220630694183048710::1698959703::1698959724::1::::<><>::
+::res://resources/::1698959489
+theme.tres::Theme::649850629649754962::1698959489::0::1::::<><>::
+::res://scenes/::1698959445
+::res://scenes/main/::1698959569
+main.tscn::PackedScene::2976519969243533387::1698959569::0::1::::<><>::
+::res://scripts/::1698959565
+globals.gd::GDScript::-1::1698959565::0::1::::<>Node<>::
