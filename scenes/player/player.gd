@@ -26,7 +26,7 @@ func _process(delta: float) -> void:
 	
 	velocity.x = clampf(velocity.x, -MAX_H_SPEED, MAX_H_SPEED)
 	
-	var can_jump: bool = is_on_floor() or has_double_jump or coyote_timer_node.is_stopped()
+	var can_jump: bool = is_on_floor() or has_double_jump or not coyote_timer_node.is_stopped()
 	
 	if move_vector.y < 0 and can_jump:
 		velocity.y = move_vector.y * JUMP_SPEED
