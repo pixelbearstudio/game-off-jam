@@ -1,1 +1,4 @@
 res://scenes/main/main.tscn
+res://scenes/base_level/base_level.tscn
+res://resources/placeholder_tilemap.tres
+res://scenes/placeholder_level/placeholder_level.tscn
