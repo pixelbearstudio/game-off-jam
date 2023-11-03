@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 Node2D
 TileMap
+=======
+Timer
+CollisionShape2D
+CharacterBody2D
+>>>>>>> add player simple movement
 Node
