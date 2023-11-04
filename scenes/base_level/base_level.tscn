@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bfsmrly4sh71t"]
+[gd_scene load_steps=3 format=3 uid="uid://bfsmrly4sh71t"]
 
 [ext_resource type="TileSet" uid="uid://cgkuqj252wsai" path="res://resources/placeholder_tilemap.tres" id="1_ldiw1"]
+[ext_resource type="PackedScene" uid="uid://c4uc4u07mi5tj" path="res://scenes/player/player.tscn" id="2_4akdg"]
 
 [node name="BaseLevel" type="Node"]
 
@@ -9,3 +10,5 @@ tile_set = ExtResource("1_ldiw1")
 format = 2
 
 [node name="PlayerRoot" type="Node2D" parent="."]
+
+[node name="Player" parent="PlayerRoot" instance=ExtResource("2_4akdg")]

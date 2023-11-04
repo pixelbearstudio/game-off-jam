@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://c4uc4u07mi5tj"]
+[gd_scene load_steps=5 format=3 uid="uid://c4uc4u07mi5tj"]
 
 [ext_resource type="Script" path="res://scenes/player/player.gd" id="1_cvw3j"]
 [ext_resource type="Texture2D" uid="uid://cuvk44068epsw" path="res://assets/placeholders/24x24_Player.png" id="2_byo2l"]
@@ -6,7 +6,11 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u45yt"]
 size = Vector2(24, 24)
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_6bjgd"]
+radius = 20.0
+
 [node name="Player" type="CharacterBody2D" groups=["player"]]
+safe_margin = 0.001
 script = ExtResource("1_cvw3j")
 
 [node name="CoyoteTimer" type="Timer" parent="."]
@@ -18,3 +22,10 @@ texture = ExtResource("2_byo2l")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u45yt")
+
+[node name="InteractArea" type="Area2D" parent="."]
+collision_layer = 2147483648
+collision_mask = 2147483648
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea"]
+shape = SubResource("CircleShape2D_6bjgd")
