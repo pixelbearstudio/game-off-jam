@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://7hnvbid1hrlp"]
+
+[ext_resource type="Script" path="res://scenes/animated_button/animated_button.gd" id="1_molr8"]
+
+[node name="AnimatedButton" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "TEST TEXT"
+script = ExtResource("1_molr8")
