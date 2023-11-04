@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0xb2polcyunj"]
+
+[ext_resource type="Script" path="res://scenes/small_entity/small_entity.gd" id="1_4uy75"]
+[ext_resource type="Texture2D" uid="uid://bkwop2murotyd" path="res://assets/placeholders/24x24_entity.png" id="1_m8qw1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4otsg"]
+radius = 25.0
+
+[node name="SmallEntity" type="Node2D"]
+script = ExtResource("1_4uy75")
+
+[node name="24x24Entity" type="Sprite2D" parent="."]
+texture = ExtResource("1_m8qw1")
+
+[node name="InteractArea" type="Area2D" parent="."]
+collision_layer = 2147483648
+collision_mask = 2147483648
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea"]
+shape = SubResource("CircleShape2D_4otsg")
