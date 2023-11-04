@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://crsrdjt56nbms"]
+
+[ext_resource type="PackedScene" uid="uid://7hnvbid1hrlp" path="res://scenes/animated_button/animated_button.tscn" id="1_6oe2u"]
+[ext_resource type="Script" path="res://scenes/main_menu/main_menu.gd" id="1_wplja"]
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource("1_wplja")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="PlayButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("1_6oe2u")]
+layout_mode = 2
+text = "PLAY"
+
+[node name="HowToButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("1_6oe2u")]
+layout_mode = 2
+text = "HOW TO PLAY"
+
+[node name="QuitButton" parent="MarginContainer/PanelContainer/MarginContainer/VBoxContainer" instance=ExtResource("1_6oe2u")]
+layout_mode = 2
+text = "QUIT"
