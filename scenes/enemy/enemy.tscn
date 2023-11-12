@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://jippc2c37s33"]
 
 [ext_resource type="Script" path="res://scenes/enemy/enemy.gd" id="1_e3qd6"]
-[ext_resource type="Texture2D" uid="uid://rjxxoqaore5a" path="res://assets/placeholders/24x24_enemy.png" id="2_dlq0y"]
+[ext_resource type="Texture2D" uid="uid://b5k6kgw6bl4xq" path="res://assets/placeholders/24x24_enemy_peaceful.png" id="2_7khpx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u45yt"]
 size = Vector2(24, 24)
@@ -10,7 +10,8 @@ size = Vector2(24, 24)
 radius = 36.0
 
 [node name="Enemy" type="CharacterBody2D" groups=["enemies"]]
-collision_layer = 2
+collision_layer = 18
+collision_mask = 17
 safe_margin = 0.001
 script = ExtResource("1_e3qd6")
 
@@ -18,8 +19,8 @@ script = ExtResource("1_e3qd6")
 wait_time = 0.15
 one_shot = true
 
-[node name="24x24Player" type="Sprite2D" parent="."]
-texture = ExtResource("2_dlq0y")
+[node name="EnemySprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_7khpx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_u45yt")
@@ -30,3 +31,6 @@ collision_mask = 2147483648
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractArea"]
 shape = SubResource("CircleShape2D_6bjgd")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+rect = Rect2(-24, -8, 48, 20)

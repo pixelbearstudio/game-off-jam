@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c78xdubb2i256"]
+[gd_scene load_steps=10 format=3 uid="uid://c78xdubb2i256"]
 
 [ext_resource type="PackedScene" uid="uid://bfsmrly4sh71t" path="res://scenes/base_level/base_level.tscn" id="1_b8x7r"]
 [ext_resource type="Texture2D" uid="uid://d2tpu0u7fajcw" path="res://assets/placeholders/24x24_tile_platformer.png" id="2_5x81i"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d0xb2polcyunj" path="res://scenes/small_entity/small_entity.tscn" id="5_o2vpp"]
 [ext_resource type="PackedScene" uid="uid://4uk42apqnn0u" path="res://scenes/levels/entity_level_001.tscn" id="6_67pow"]
 [ext_resource type="PackedScene" uid="uid://jippc2c37s33" path="res://scenes/enemy/enemy.tscn" id="6_m34sv"]
+[ext_resource type="TileSet" uid="uid://xbchpb8d0bur" path="res://resources/enemy_walls.tres" id="7_i3lh4"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ycpyf"]
 texture = ExtResource("2_5x81i")
@@ -181,8 +182,18 @@ layer_0/tile_data = PackedInt32Array(524301, 65536, 2, 458765, 65536, 1, 393229,
 position = Vector2(210, 36)
 entity_scene = ExtResource("6_67pow")
 
-[node name="Enemy" parent="Entities" index="1" instance=ExtResource("6_m34sv")]
-position = Vector2(-121, -14)
+[node name="Enemy2" parent="Entities" index="1" instance=ExtResource("6_m34sv")]
+position = Vector2(-406, -90)
+
+[node name="Enemy" parent="Entities" index="2" instance=ExtResource("6_m34sv")]
+position = Vector2(-117, -13)
+
+[node name="EnemyWalls" type="TileMap" parent="Entities" index="3"]
+modulate = Color(0.0352941, 1, 1, 0.572549)
+tile_set = ExtResource("7_i3lh4")
+cell_quadrant_size = 24
+format = 2
+layer_0/tile_data = PackedInt32Array(-196623, 0, 0, -196630, 0, 0)
 
 [node name="Player" parent="PlayerRoot" index="0"]
 position = Vector2(-191, -17)

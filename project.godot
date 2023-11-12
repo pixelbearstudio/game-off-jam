@@ -66,6 +66,10 @@ interact={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_5="EnemyWalls"
+
 [physics]
 
 2d/solver/default_contact_bias=0.0
